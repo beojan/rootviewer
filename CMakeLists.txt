@@ -19,6 +19,7 @@ set(rootviewer_SRC
   src/rootviewer.cpp
   src/rootfile.cpp
   src/ttreemodel.cpp
+  src/rootcanvaswidget.cpp
 )
 
 # Create code from a list of Qt designer ui files.

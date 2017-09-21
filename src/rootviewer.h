@@ -10,21 +10,21 @@ namespace Ui {
 class RootViewer;
 }
 
-class RootViewer : public QMainWindow
-{
+class RootViewer : public QMainWindow {
     Q_OBJECT
 
-public:
-    explicit RootViewer(QWidget *parent = 0);
+  public:
+    explicit RootViewer(QWidget* parent = 0);
+    void openRootFileName(QString filename);
     ~RootViewer();
 
-public slots:
+  public slots:
     void openRootFile();
     void itemSelected(const QModelIndex& index);
-    
-private:
-    Ui::RootViewer *ui;
-    RootFile* root_file;
+
+  private:
+    Ui::RootViewer* ui;
+    RootFile*       root_file;
 };
 
 #endif // ROOTVIEWER_H

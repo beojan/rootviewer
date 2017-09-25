@@ -1,18 +1,3 @@
-CMake Qt5 GUI Template
-----------------------
+#ROOT Viewer
 
-You need Qt5 and CMake 2.8.11 or higher
-
--- Build instructions --
-
-cd /your/project/build
-cmake ../
-make
-
-./rootviewer
-
-
--- Tutorials and resources --
-
-Qt online docs
-https://doc.qt.io/
+Simple viewer for ROOT files in Qt. Displays plots and shows `TTree`s as tables.

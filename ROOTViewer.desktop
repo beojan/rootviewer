@@ -1,0 +1,9 @@
+[Desktop Entry]
+Comment=ROOT File Viewer
+Name=ROOT Viewer
+Exec=rootviewer %F
+GenericName=ROOT File Viewer
+Version=0.1
+Type=Application
+Icon=ROOT
+MimeType=application/x-root;

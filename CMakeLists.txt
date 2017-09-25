@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.7)
 project(RootViewer)
+find_package(ECM REQUIRED NO_MODULE)
+set(CMAKE_MODULE_PATH ${ECM_MODULE_DIR})
 
 # Find includes in corresponding build directories
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
@@ -34,3 +36,6 @@ target_link_libraries(rootviewer Qt5::Widgets ${ROOT_LIBRARIES})
 
 # Install the executable
 install(TARGETS rootviewer DESTINATION bin)
+install( PROGRAMS ROOTViewer.desktop DESTINATION ${XDG_APPS_INSTALL_DIR} )
+ecm_install_icons(ICONS 128-apps-ROOT.png DESTINATION share/icons)
+
